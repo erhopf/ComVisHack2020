@@ -6,14 +6,14 @@ import json
 import os
 
 
-if 'subscription_key' in os.environ:
-    subscription_key = os.environ['subscription_key']
+if 'COMPUTER_VISION_SUBSCRIPTION_KEY' in os.environ:
+    subscription_key = os.environ['COMPUTER_VISION_SUBSCRIPTION_KEY']
 else:
     print('Environment variable for subscription_key is not set.')
     exit()
     
-if 'endpoint' in os.environ:
-    endpoint = os.environ['endpoint']
+if 'COMPUTER_VISION_ENDPOINT' in os.environ:
+    endpoint = os.environ['COMPUTER_VISION_ENDPOINT']
 else:
     print('Environment variable for endpoint is not set.')
     exit()
