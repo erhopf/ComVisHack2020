@@ -3,6 +3,7 @@ from azure.cognitiveservices.vision.computervision.models import OperationStatus
 from msrest.authentication import CognitiveServicesCredentials
 import time
 import json
+import os
 
 
 if 'subscription_key' in os.environ:
