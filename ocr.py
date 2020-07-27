@@ -2,11 +2,9 @@ from azure.cognitiveservices.vision.computervision import ComputerVisionClient
 from azure.cognitiveservices.vision.computervision.models import OperationStatusCodes
 from msrest.authentication import CognitiveServicesCredentials
 import time
-import jsonify
 import json
 
 
-"""
 if 'subscription_key' in os.environ:
     subscription_key = os.environ['subscription_key']
 else:
@@ -18,12 +16,6 @@ if 'endpoint' in os.environ:
 else:
     print('Environment variable for endpoint is not set.')
     exit()
-"""
-
-# Add your Computer Vision subscription key to your environment variables.
-
-subscription_key = "5ee02059585546c7b0a3990a1f37e070"
-endpoint = "https://comvis-hack2020.cognitiveservices.azure.com/"
 
 
 def read_image(image_uri):
