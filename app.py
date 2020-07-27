@@ -7,7 +7,7 @@ app.config['JSON_AS_ASCII'] = False
 
 @app.route('/')
 def index():
-    return ("Please supply a route.")
+    return "Please supply a route."
 
 
 @app.route('/ocr', methods=['POST'])
